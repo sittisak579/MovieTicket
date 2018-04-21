@@ -41,9 +41,11 @@ public class moviedemo {
         } else if (user.equals("every") && password.equals("1212")) {
             every e = new every(5);
             e.print();//ไปคลาสevery
+            total = e.total;
         } else if (user.equals("Uvip") && password.equals("1818")) {
             Uvip u = new Uvip();
             u.print();//ไปคลาสUvip
+            total = u.total;
         } else {//ถ้าuser&&passwordไม่เข้าเมตตอดโปรแกรมจะแจ้งให้ลองใหม่
             b = "=========Please try again.========";
         }

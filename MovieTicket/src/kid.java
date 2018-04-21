@@ -63,7 +63,9 @@ class kid extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,M
     public void promotion(){
 System.out.println("promotion >>Buy 3 get 10% off \n"); 
     if(piece==0){
-     System.out.println("ยินดีด้วยคุณได้รับส่วนลด10%"); 
+     System.out.println("--------------------");
+     System.out.println("ยินดีด้วยคุณได้รับส่วนลด10%");
+     System.out.println("--------------------");
      total=total-(total*0.1);
     }
     }
