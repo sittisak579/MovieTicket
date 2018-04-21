@@ -67,10 +67,15 @@ public class moviedemo {
         String Address =input1.nextLine();
         System.out.print("How many phone numbers do you have : ");
         int num =input.nextInt();
-        for(int i=0;i<num;i++){
+        int i=0;String num1="";
+        while(i<num){
         System.out.print("phone number : ");
-        String num1 =input1.nextLine();
-        str.add(num1);
+        num1 =input1.nextLine();
+        
+        if(num1 !=""){
+            str.add(num1);i=i+1;
+        }
+        
         }
         System.out.println("====================");
         System.out.println("Your name is :"+name);
@@ -78,6 +83,7 @@ public class moviedemo {
         System.out.println("Address :"+Address);
         for(int j=0;j<str.size();j++){ 
         System.out.println("telephone number :"+str.get(j)); 
-        }    
+        }       
+        }
    }
-}
+

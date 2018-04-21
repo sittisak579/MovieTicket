@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 abstract class movie1038 extends moviebase {
 
-    public double total = 0,hd4k =150,Saveprice =0 ;
+    public double total = 0,hd4k =150,Saveprice =0,ex=1000 ;
     public int piece;
     public String Savename;
 
