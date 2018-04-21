@@ -1,18 +1,13 @@
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class moviedemo {
-
     private static String user, password;
     private static double total;
-
     public static void main(String[] args) {
         System.out.println("=======Movie store=========");
-        sucurity();//บรรทัด18
+        sucurity();//บรรทัด13
         System.out.println("Total Movie is "+total+" Bath\n");
-        Transport();//บรรทัด52
+        Transport();//บรรทัด48
         System.out.println("\nTotal is "+total+" Bath");
     }
     public static void sucurity() {
@@ -22,9 +17,8 @@ public class moviedemo {
             user = input.nextLine();
             System.out.print("password: ");
             password = input.nextLine();
-
 //เข้าเมดตอดเพื่อตรวจสอบ user&&password
-            String b = sucurity2(user, password);//บรรทัด34
+            String b = sucurity2(user, password);//บรรทัด28
             System.out.println(b);
 //วนลูปเมื่อuser&&passwordไม่ตรงกัน
         } while ((!user.equals("kid") || !password.equals("1111"))
@@ -70,13 +64,10 @@ public class moviedemo {
         int i=0;String num1="";
         while(i<num){
         System.out.print("phone number : ");
-        num1 =input1.nextLine();
-        
+        num1 =input1.nextLine();       
         if(num1 !=""){
-            str.add(num1);i=i+1;
-        }
-        
-        }
+        str.add(num1);i=i+1;
+        }}
         System.out.println("====================");
         System.out.println("Your name is :"+name);
         System.out.println("Zip cods :"+zip);

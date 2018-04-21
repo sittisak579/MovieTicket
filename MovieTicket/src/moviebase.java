@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
-
-
 abstract class moviebase {
 public abstract int SelectMovie(int a);
-
 }
  interface Movie01{
 public String movieName01 ="Ironman\t:มหาประลัยคนเกราะเหล็ก";
