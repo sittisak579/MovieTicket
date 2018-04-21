@@ -50,19 +50,19 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05
         System.out.print("\n(Enter number) :");
         M4 = inputUvip.nextInt();
         total=SelectMovie(M4);//สืบทอดจากแม่ของแม่ บรรทัดที่67
-        }while(M4>18||M4<1);
+        }while(M4>17||M4<1);
         System.out.print("Do you want to buy other movies?(Y=Yes) :");
         M5 = inputUvip1.nextLine();
         Uvip.add(Savename+"\tราคา :"+Saveprice+"\tBath");//เก็บไว้ในarray
         }while(M5.equals("Y")|| M5.equals("y"));
-        promotion();//บรรทัดที่63
+        promotion();//บรรทัดที่64
         System.out.println("\n:::::::Bill:::::::");
         for(int j=0;j<Uvip.size();j++){ 
         System.out.println(Uvip.get(j));}    
     }
 
     public void promotion() {
-     System.out.println("สมาชิกพิเศษได้รับส่วนลด 20%"); 
+     System.out.println("\n*******สมาชิกพิเศษได้รับส่วนลด 20%*******"); 
      total=total-(total*0.20);
     }
     public int SelectMovie(int a){
