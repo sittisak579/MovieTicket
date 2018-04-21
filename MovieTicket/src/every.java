@@ -37,6 +37,8 @@ else if(piece==0){
      total=total-(total*0.15);
     }
     }
+    
+    
 public int SelectMovie(int a){
     switch(a){
         
