@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,Movie06,Movie07,Movie08,Movie09,Movie10,Movie11,Movie12,Movie13,Movie14,Movie15,Movie16,Movie17 {
 
         Uvip(){
-    System.out.println("HOT!! Top Movie >>>>\t"+movieName10+"\t<<<<\n");    
+    System.out.println("HOT!!>>>>New vip movie<<<<\n");    
     }
     
     Uvip(int piece3){
@@ -21,24 +21,29 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
     do{    
     title();
         System.out.println("All piece get 20% off");
-        System.out.println("Movie for vip");
-        System.out.println("\t=Action=");
-        System.out.println("press 1>"+movieName01);
-        System.out.println("press 2>"+movieName02);
-        System.out.println("press 3>"+movieName07);
-        System.out.println("press 4>"+movieName08);
+        System.out.println("\tMovie for vip");
+        System.out.println("press 1>"+movieName13);
+        System.out.println("press 2>"+movieName14);
+        System.out.println("press 3>"+movieName15);
+        System.out.println("press 4>"+movieName16);
+        System.out.println("press 5>"+movieName17);
+        System.out.println("\n\t=Action=");
+        System.out.println("press 6>"+movieName01);
+        System.out.println("press 7>"+movieName02);
+        System.out.println("press 8>"+movieName07);
+        System.out.println("press 9>"+movieName08);
         System.out.println("\n\t=Fantacy=");
-        System.out.println("press 5>"+movieName05);
-        System.out.println("press 6>"+movieName06);
-        System.out.println("press 7>"+movieName09);
+        System.out.println("press 10>"+movieName05);
+        System.out.println("press 11>"+movieName06);
+        System.out.println("press 12>"+movieName09);
         System.out.println("\n\t=Horror=");
-        System.out.println("press 8>"+movieName10);
-        System.out.println("press 9>"+movieName11);
+        System.out.println("press 13>"+movieName10);
+        System.out.println("press 14>"+movieName11);
         System.out.println("\n\t=Comedy=");
-        System.out.println("press 10>"+movieName12);
+        System.out.println("press 15>"+movieName12);
         System.out.println("\n\t=Cartoon=");
-        System.out.println("press 11>"+movieName03);
-        System.out.println("press 12>"+movieName04);
+        System.out.println("press 16>"+movieName03);
+        System.out.println("press 17>"+movieName04);
         
         System.out.print("\n(Enter number) :");
     M4 = inputUvip.nextInt();
@@ -49,7 +54,7 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
     
     else{
     System.out.print("Do you want to buy other movies?(Y=Yes) :");
-    M5 = inputUvip.nextLine();}
+    M5 = inputUvip1.nextLine();}
     
     Uvip.add(Savename+"\tราคา :"+Saveprice+"\tBath");
     }while(M5.equals("Y")|| M5.equals("y"));
@@ -65,18 +70,23 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
     }
     public int SelectMovie(int a){
     switch(a){
-        case 1:println1(); break;
-        case 2:println2(); break;
-        case 3:println3(); break;
-        case 4:println4(); break;
-        case 5:println5(); break;
-        case 6:println6(); break;
-        case 7:println7(); break;
-        case 8:println8(); break;
-        case 9:println9(); break;
-        case 10:println10(); break;
-        case 11:println11(); break;
-        case 12:println12(); break;    
+        case 1:println13(); break;
+        case 2:println14(); break;
+        case 3:println15(); break;
+        case 4:println16(); break;
+        case 5:println17(); break;
+        case 6:println1(); break;
+        case 7:println2(); break;
+        case 8:println7(); break;
+        case 9:println8(); break;
+        case 10:println5(); break;
+        case 11:println6(); break;
+        case 12 :println9(); break;
+        case 13:println10(); break;
+        case 14:println11(); break;
+        case 15:println12(); break;
+        case 16:println3(); break;
+        case 17:println4(); break;  
     }
     return (int)total;
     }
@@ -94,8 +104,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputkid2.nextInt();
         switch(a){
-        case 1:super.total=total+price01; piece=piece-1;order(movieName01,price01); break;
-        case 2:super.total=total+price01+hd4k;piece=piece-1;order(movieName01,price01+hd4k); break;
+        case 1:super.total=total+price01; order(movieName01,price01); break;
+        case 2:super.total=total+price01+hd4k;order(movieName01,price01+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -114,8 +124,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputkid2.nextInt();
         switch(a){
-        case 1:super.total=total+price02; piece=piece-1; order(movieName02,price02);break;
-        case 2:super.total=total+price02+hd4k; piece=piece-1;order(movieName02,price02+hd4k); break;
+        case 1:super.total=total+price02;  order(movieName02,price02);break;
+        case 2:super.total=total+price02+hd4k; order(movieName02,price02+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -134,8 +144,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputkid2.nextInt();
         switch(a){
-        case 1:super.total=total+price03; piece=piece-1; order(movieName03,price03);break;
-        case 2:super.total=total+price03+hd4k; piece=piece-1;order(movieName03,price03+hd4k); break;
+        case 1:super.total=total+price03;  order(movieName03,price03);break;
+        case 2:super.total=total+price03+hd4k; order(movieName03,price03+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -154,8 +164,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputkid2.nextInt();
         switch(a){
-        case 1:super.total=total+price04; piece=piece-1; order(movieName04,price04);break;
-        case 2:super.total=total+price04+hd4k; piece=piece-1;order(movieName04,price04+hd4k); break;
+        case 1:super.total=total+price04; order(movieName04,price04);break;
+        case 2:super.total=total+price04+hd4k; order(movieName04,price04+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -174,8 +184,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputkid2.nextInt();
         switch(a){
-        case 1:super.total=total+price05; piece=piece-1; order(movieName05,price05);break;
-        case 2:super.total=total+price05+hd4k; piece=piece-1;order(movieName05,price05+hd4k); break;
+        case 1:super.total=total+price05;  order(movieName05,price05);break;
+        case 2:super.total=total+price05+hd4k; order(movieName05,price05+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -194,8 +204,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputkid2.nextInt();
         switch(a){
-        case 1:super.total=total+price06; piece=piece-1; order(movieName06,price06);break;
-        case 2:super.total=total+price06+hd4k; piece=piece-1;order(movieName06,price06+hd4k); break;
+        case 1:super.total=total+price06;  order(movieName06,price06);break;
+        case 2:super.total=total+price06+hd4k; order(movieName06,price06+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -214,8 +224,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
         switch(a){
-        case 1:super.total=total+price07; piece=piece-1;order(movieName07,price07); break;
-        case 2:super.total=total+price07+hd4k;piece=piece-1;order(movieName07,price07+hd4k); break;
+        case 1:super.total=total+price07; order(movieName07,price07); break;
+        case 2:super.total=total+price07+hd4k;order(movieName07,price07+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -234,8 +244,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
         switch(a){
-        case 1:super.total=total+price08; piece=piece-1;order(movieName08,price08); break;
-        case 2:super.total=total+price08+hd4k;piece=piece-1;order(movieName08,price08+hd4k); break;
+        case 1:super.total=total+price08; order(movieName08,price08); break;
+        case 2:super.total=total+price08+hd4k;order(movieName08,price08+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -254,8 +264,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
         switch(a){
-        case 1:super.total=total+price09; piece=piece-1;order(movieName09,price09); break;
-        case 2:super.total=total+price09+hd4k;piece=piece-1;order(movieName09,price09+hd4k); break;
+        case 1:super.total=total+price09; order(movieName09,price09); break;
+        case 2:super.total=total+price09+hd4k;order(movieName09,price09+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -274,8 +284,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
         switch(a){
-        case 1:super.total=total+price10; piece=piece-1;order(movieName10,price10); break;
-        case 2:super.total=total+price10+hd4k;piece=piece-1;order(movieName10,price10+hd4k); break;
+        case 1:super.total=total+price10; order(movieName10,price10); break;
+        case 2:super.total=total+price10+hd4k;order(movieName10,price10+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -286,7 +296,7 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
         System.out.println("\nMovie Name :"+movieName11);
  System.out.println("Movie Type :"+type11);
  System.out.println("IMDb Score :"+IMDb11);
- System.out.println("Review : ยังจะมีภาคต่ออีกหรอ!!");
+ System.out.println("Review : กลัวตัวตลกไปอีกนาน");
  System.out.println("1 = DVD (HD)ราคา :"+price11+"| 2 = DVD (4k)ราคา :"+(price11+hd4k));
  System.out.println("3 = back");
  Scanner inputevery2 = new Scanner(System.in);
@@ -294,8 +304,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
         switch(a){
-        case 1:super.total=total+price11; piece=piece-1;order(movieName11,price11); break;
-        case 2:super.total=total+price11+hd4k;piece=piece-1;order(movieName11,price11+hd4k); break;
+        case 1:super.total=total+price11;order(movieName11,price11); break;
+        case 2:super.total=total+price11+hd4k;order(movieName11,price11+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -314,8 +324,8 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
  do{
  System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
         switch(a){
-        case 1:super.total=total+price12; piece=piece-1;order(movieName12,price12); break;
-        case 2:super.total=total+price12+hd4k;piece=piece-1;order(movieName12,price12+hd4k); break;
+        case 1:super.total=total+price12; order(movieName12,price12); break;
+        case 2:super.total=total+price12+hd4k;order(movieName12,price12+hd4k); break;
         case 3:System.out.println("Now Loading");print(); break;
         default:System.out.println("=========Please try again.========");break;}
  }while(a!=1 && a!=2 && a!=3);
@@ -323,21 +333,101 @@ class Uvip extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,
 
     
     public void println13() {
+        System.out.println("\nMovie Name :"+movieName13);
+ System.out.println("Movie Type :"+type13);
+ System.out.println("IMDb Score :"+IMDb13);
+ System.out.println("Review : ดูก่อนโรงอีก สุดยอดครับ");
+ System.out.println("1 = DVD (HD)ราคา :"+price13);
+ System.out.println("2 = back");
+ Scanner inputevery2 = new Scanner(System.in);
+ int a;
+ do{
+ System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
+        switch(a){
+        case 1:super.total=total+price13;order(movieName13,price13); break;
+        
+        case 2:System.out.println("Now Loading");print(); break;
+        default:System.out.println("=========Please try again.========");break;}
+ }while(a!=1 && a!=2 && a!=3);
         }
 
     
     public void println14() {
+        System.out.println("\nMovie Name :"+movieName14);
+ System.out.println("Movie Type :"+type14);
+ System.out.println("IMDb Score :"+IMDb14);
+ System.out.println("Review : สวัสดีซานตาครอส");
+ System.out.println("1 = DVD (HD)ราคา :"+price14);
+ System.out.println("2 = back");
+ Scanner inputevery2 = new Scanner(System.in);
+ int a;
+ do{
+ System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
+        switch(a){
+        case 1:super.total=total+price14;order(movieName14,price14); break;
+        
+        case 2:System.out.println("Now Loading");print(); break;
+        default:System.out.println("=========Please try again.========");break;}
+ }while(a!=1 && a!=2 && a!=3);
         }
 
     
     public void println15() {
+        System.out.println("\nMovie Name :"+movieName15);
+ System.out.println("Movie Type :"+type15);
+ System.out.println("IMDb Score :"+IMDb15);
+ System.out.println("Review : ตัวอะไรเนี่ย!!");
+ System.out.println("1 = DVD (HD)ราคา :"+price15);
+ System.out.println("2 = back");
+ Scanner inputevery2 = new Scanner(System.in);
+ int a;
+ do{
+ System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
+        switch(a){
+        case 1:super.total=total+price15;order(movieName15,price15); break;
+       
+        case 2:System.out.println("Now Loading");print(); break;
+        default:System.out.println("=========Please try again.========");break;}
+ }while(a!=1 && a!=2 && a!=3);
         }
 
     
     public void println16() {
+        System.out.println("\nMovie Name :"+movieName16);
+ System.out.println("Movie Type :"+type16);
+ System.out.println("IMDb Score :"+IMDb16);
+ System.out.println("Review : รอมาหลายปี ลืมเนื้อเนื่องหมดละ");
+ System.out.println("1 = DVD (HD)ราคา :"+price16);
+ System.out.println("2 = back");
+ Scanner inputevery2 = new Scanner(System.in);
+ int a;
+ do{
+ System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
+        switch(a){
+        case 1:super.total=total+price16;order(movieName16,price16); break;
+        
+        case 2:System.out.println("Now Loading");print(); break;
+        default:System.out.println("=========Please try again.========");break;}
+ }while(a!=1 && a!=2 && a!=3);
         }
 
     
     public void println17() {
+        System.out.println("\nMovie Name :"+movieName17);
+ System.out.println("Movie Type :"+type17);
+ System.out.println("IMDb Score :"+IMDb17);
+ System.out.println("Review : เขากลับมาแล้ว!!");
+  System.out.println("1 = DVD (HD)ราคา :"+price13);
+ System.out.println("2 = back");
+ Scanner inputevery2 = new Scanner(System.in);
+ int a;
+ do{
+ System.out.print("\n(Enter number) :");a = inputevery2.nextInt();
+        switch(a){
+        case 1:super.total=total+price17;order(movieName17,price17); break;
+        
+        case 2:System.out.println("Now Loading");print(); break;
+        default:System.out.println("=========Please try again.========");break;}
+ }while(a!=1 && a!=2 && a!=3);
         }
 }

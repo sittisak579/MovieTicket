@@ -20,7 +20,8 @@ class every extends movie1038 implements Movie07,Movie08,Movie09,Movie10,Movie11
     int M2; String M3;
         do{
         title();
-        promotion();
+        System.out.println("promotion >>Buy 3 get 10% off ");
+        System.out.println("promotion >>Buy 5 get 15% off \n");
         System.out.println("Movie for every");
         System.out.println("\t=Action=");
     System.out.println("press 1>"+movieName07);
@@ -28,17 +29,17 @@ class every extends movie1038 implements Movie07,Movie08,Movie09,Movie10,Movie11
     System.out.println("\n\t=Fantacy=");
     System.out.println("press 3>"+movieName09);
     System.out.println("\n\t=Horror=");
-    System.out.println("press 5>"+movieName10);
-    System.out.println("press 6>"+movieName11);
+    System.out.println("press 4>"+movieName10);
+    System.out.println("press 5>"+movieName11);
     System.out.println("\n\t=Comedy=");
-    System.out.println("press 5>"+movieName12);
+    System.out.println("press 6>"+movieName12);
     
     System.out.print("\n(Enter number) :");
     M2 = inputevery.nextInt();
     total=SelectMovie(M2);//สืบทอดจากแม่ของแม่
     if(piece==0){
     M3 = "N";
-    promotion();}
+    }
     
     else{
     System.out.print("Do you want to buy other movies?(Y=Yes) :");
@@ -46,6 +47,7 @@ class every extends movie1038 implements Movie07,Movie08,Movie09,Movie10,Movie11
     
     every.add(Savename+"\tราคา :"+Saveprice+"\tBath");
     }while(M3.equals("Y")|| M3.equals("y"));
+    promotion();
     
     for(int j=0;j<every.size();j++){ 
     System.out.println("\n:::::::"
@@ -54,8 +56,6 @@ class every extends movie1038 implements Movie07,Movie08,Movie09,Movie10,Movie11
   
         
     public void promotion() {
-System.out.println("promotion >>Buy 3 get 10% off ");
-System.out.println("promotion >>Buy 5 get 15% off \n");
 if(piece<3&&piece>0){
      System.out.println("--------------------");
      System.out.println("ยินดีด้วยคุณได้รับส่วนลด10%");

@@ -44,10 +44,9 @@ class kid extends movie1038 implements Movie01,Movie02,Movie03,Movie04,Movie05,M
     
     kid.add(Savename+"\tราคา :"+Saveprice+"\tBath");
     }while(M1.equals("Y")|| M1.equals("y"));
-    
+    System.out.println("\n:::::::Bill:::::::");
     for(int j=0;j<kid.size();j++){ 
-    System.out.println("\n:::::::"
-            + "Bill:::::::");System.out.println(kid.get(j));}
+    System.out.println(kid.get(j));}
     }
     public int SelectMovie(int M){
     switch(M){

@@ -82,9 +82,9 @@ public double price10 =300.0;
 public void println10();
 } 
 interface Movie11{
-public String movieName11 ="The Conjuring2";
+public String movieName11 ="IT : โผล่จากนรก";
 public String type11  ="Horror";
-public String IMDb11  ="7.4/10";
+public String IMDb11  ="7.5/10";
 public double price11 =300.0;
 public void println11();
 } 
@@ -96,37 +96,37 @@ public double price12 =200.0;
 public void println12();
 } 
 interface Movie13{
-public String movieName13 ="";
-public String type13  ="";
-public String IMDb13  ="";
-public double price13 =0;
+public String movieName13 ="Avengers: Infinity War";
+public String type13  ="Action";
+public String IMDb13  ="ไม่เป็นทางการ";
+public double price13 =450.0;
 public void println13();
 } 
 interface Movie14{
-public String movieName14 ="";
-public String type14  ="";
-public String IMDb14  ="";
-public double price14 =0;
+public String movieName14 ="Deadpool 2";
+public String type14  ="Action";
+public String IMDb14  ="ไม่เป็นทางการ";
+public double price14 =450.0;
 public void println14();
 } 
 interface Movie15{
-public String movieName15 ="";
-public String type15  ="";
-public String IMDb15  ="";
-public double price15 =0;
+public String movieName15 ="Slender Man";
+public String type15  ="Horror";
+public String IMDb15  ="ไม่เป็นทางการ";
+public double price15 =450.0;
 public void println15();
 } 
 interface Movie16{
-public String movieName16 ="";
-public String type16  ="";
-public String IMDb16  ="";
-public double price16 =0;
+public String movieName16 ="The Incredibles 2";
+public String type16  ="Catoon";
+public String IMDb16  ="ไม่เป็นทางการ";
+public double price16 =450.0;
 public void println16();
 } 
 interface Movie17{
-public String movieName17 ="";
-public String type17  ="";
-public String IMDb17  ="";
-public double price17 =0;
+public String movieName17 ="Johnny English Strikes Again";
+public String type17  ="Comedy";
+public String IMDb17  ="ไม่เป็นทางการ";
+public double price17 =450.0;
 public void println17();
 } 

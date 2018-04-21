@@ -43,7 +43,7 @@ public class moviedemo {
             e.print();//ไปคลาสevery
             total = e.total;
         } else if (user.equals("Uvip") && password.equals("1818")) {
-            Uvip u = new Uvip();
+            Uvip u = new Uvip(999);
             u.print();//ไปคลาสUvip
             total = u.total;
         } else {//ถ้าuser&&passwordไม่เข้าเมตตอดโปรแกรมจะแจ้งให้ลองใหม่
